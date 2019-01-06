@@ -1,15 +1,16 @@
-class testrepo {
-	if $environment == 'prodution' {
+class puppettestrepo {
+	if $environment == 'production' {
 		notify { 'default-message' :
-			messge => "This is a production environment"
+			message => "This is a production environment",
 		}
 	} elsif $environment == 'development' {
 		notify { 'default-message' :
-			messge => "This is a development environment"
+			message => "This is a development environment",
 		}
 	} else {
 		notify { 'default-message' :
-			messge => "This is a test environment"
+			message => "This is a test environment",
+		}
 
 	}
 }
